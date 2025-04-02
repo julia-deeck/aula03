@@ -7,11 +7,11 @@ gasolina_valor = 5.80
 etanol_valor = 4.90
 
 # comparador se for gasolina ou etanol
-if tipo_combustivel == "G":
+if tipo_combustivel == "G" or tipo_combustivel == "g":
     calculo_gasolina = litros * gasolina_valor
-    print(f"Você abasteceu {litros} e gastou {calculo_gasolina}")
-elif tipo_combustivel == "E":
+    print(f"Você abasteceu {litros} e gastou R${calculo_gasolina}")
+elif tipo_combustivel == "E" or tipo_combustivel == "e":
     calculo_etanol = litros * etanol_valor
-    print(f"Você abasteceu {litros} e gastou {calculo_etanol}")
+    print(f"Você abasteceu {litros} e gastou R${calculo_etanol}")
 else:
     print("Solicitação inválida")
