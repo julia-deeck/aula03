@@ -1,29 +1,31 @@
-# receber dois horarios de 12h ou 24h e a saída do horário ser em formato 12h
-hora1 = int(input("Digite a hora: ")) # primeiro horario
-minuto1 = int(input("Digite o minuto: "))
+# receber um número de 1 a 12
+mes_num = int(input("Digite o número do mês: "))
 
-hora2 = int(input("Digite a segunda hora: ")) # segundo horario
-minuto2 = int(input("Digite a segundo minuto:  "))
-
-# soma das horas e dos minutos
-soma_horas = hora1 + hora2
-soma_minutos = minuto1 + minuto2
-
-if soma_minutos >= 60:
-    soma_horas = soma_horas + 1
-    soma_minutos = soma_minutos - 60
-
-if soma_horas >= 12:
-    soma_horas = soma_horas - 12
-
-if soma_horas == 24:
-    soma_horas = soma_horas - 12
-
-if soma_minutos >= 60:
-    soma_horas = soma_horas + 1
-    soma_minutos = soma_minutos - 60
-
-if soma_horas >= 25:
-    soma_horas = soma_horas - 24
-
-print(f"{soma_horas}:{soma_minutos}")
+# de acordo com o número digitado, irá aparecer o nome do mês
+if mes_num >= 1 and mes_num <=12 : # os números só seram aceitos entre 1 e 12
+    if mes_num == 1:
+        print("Janeiro")
+    elif mes_num == 2:
+        print("Fevereiro")
+    elif mes_num == 3:
+        print("Março")
+    elif mes_num == 4:
+        print("Abril")
+    elif mes_num == 5:
+        print("Maio")
+    elif mes_num == 6:
+        print("Junho")
+    elif mes_num == 7:
+        print("Julho")
+    elif mes_num == 8:
+        print("Agosto")
+    elif mes_num == 9:
+        print("Setembro")
+    elif mes_num == 10:
+        print("Outubro")
+    elif mes_num == 11:
+        print("Novembro")
+    elif mes_num == 12:
+        print("Dezembro")
+else:
+    print("Número inválido") # o restante será inválido
